@@ -1,4 +1,4 @@
-# Rails 6 devise example
+# Rails 6 example app
 It is an example app and a basic template for devise auth in rails 6 with omni github auth.
 
 ## Build with
@@ -14,8 +14,8 @@ It is an example app and a basic template for devise auth in rails 6 with omni g
 
 ### Clone
 ```bash
-git clone https://github.com/imhta/rails_6_devise_example.git
-cd rails_6_devise_example
+git clone https://github.com/PrajktaP/practice_app.git
+cd practice_app
 ```
 ### Install and migrate db
 
