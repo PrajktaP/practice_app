@@ -35,30 +35,48 @@ To start webpack server (rails 6 default is to use webpack)
 gem install foreman
 foreman start -f Procfile.dev
 ```
+# gem 'figaro' ###########################################################
+https://github.com/laserlemon/figaro/tree/0-stable#readme
+Figaro was written to make it easy to securely configure Rails applications.
+
+Configuration values often include sensitive information. Figaro strives to be secure by default by encouraging a convention that keeps configuration out of Git.
+
+Add Figaro to your Gemfile and bundle install:
+
+gem "figaro"
+Figaro installation is easy:
+
+$ bundle exec figaro install
+This creates a commented config/application.yml file and adds it to your .gitignore. Add your own configuration to this file and you're done!
+
+# gem 'devise' ###############################################################
+Devise is a flexible authentication solution for Rails based on Warden.
+
+# gem 'cancancan' ###########################################################
+https://github.com/CanCanCommunity/cancancan
+CanCanCan is an authorization library for Ruby and Ruby on Rails which restricts what resources a given user is allowed to access.
+
+Add this to your Gemfile:
+
+gem 'cancancan'
+and run the bundle install command.
+
+Define Abilities
+User permissions are defined in an Ability class.
+
+rails g cancan:ability
+
+# gem 'rubocop-rails' #######################################################
+A RuboCop extension focused on enforcing Rails best practices and coding conventions.
+https://github.com/rubocop/rubocop-rails
+
+# gem 'stripe' #############################################################
+The Stripe Ruby library provides convenient access to the Stripe API from applications written in the Ruby language. It includes a pre-defined set of classes for API resources that initialize themselves dynamically from API responses which makes it compatible with a wide range of versions of the Stripe API.
+
+# gem 'rails-admin' ########################################################
+https://github.com/sferik/rails_admin
+RailsAdmin is a Rails engine that provides an easy-to-use interface for managing your data.
 
 
-## Screenshots
-
-### Log In Page
-<img src="screenshots/image.png">
-
-### Sign Up Page
-<img src="screenshots/image2.png">
-
-### Forgot password Page
-<img src="screenshots/image4.png">
-
-### Home Page
-<img src="screenshots/image3.png">
 
 
-
-## Useful links
-- [How to Redirect to a specific page on successful sign in](https://github.com/plataformatec/devise/wiki/How-To:-redirect-to-a-specific-page-on-successful-sign-in)
-- [How to use custom mailer](https://github.com/plataformatec/devise/wiki/How-To:-Use-custom-mailer)
-- [The Figaro Gem: an easier way to securely configure Rails applications](https://medium.com/@MinimalGhost/the-figaro-gem-an-easier-way-to-securely-configure-rails-applications-c6f963b7e993)
-- [OAuth with digital ocean in devise](https://www.digitalocean.com/community/tutorials/how-to-configure-devise-and-omniauth-for-your-rails-application)
-- [Omni Auth: overview](https://github.com/plataformatec/devise/wiki/OmniAuth:-Overview)
-- [Other Devise Examples](https://github.com/plataformatec/devise/wiki/Example-applications)
-### Common Error
-- [undefined method devise for in rails](https://stackoverflow.com/questions/4810941/undefined-method-devise-for-in-rails)
