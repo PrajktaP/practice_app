@@ -78,7 +78,10 @@ A RuboCop extension focused on enforcing Rails best practices and coding convent
 https://github.com/rubocop/rubocop-rails
 
 # gem 'stripe' #############################################################
+https://github.com/stripe/stripe-ruby
 The Stripe Ruby library provides convenient access to the Stripe API from applications written in the Ruby language. It includes a pre-defined set of classes for API resources that initialize themselves dynamically from API responses which makes it compatible with a wide range of versions of the Stripe API.
+
+gem 'stripe'
 
 # gem 'rails-admin' ########################################################
 https://github.com/sferik/rails_admin
