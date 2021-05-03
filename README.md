@@ -50,7 +50,14 @@ $ bundle exec figaro install
 This creates a commented config/application.yml file and adds it to your .gitignore. Add your own configuration to this file and you're done!
 
 # gem 'devise' ###############################################################
+https://github.com/heartcombo/devise
 Devise is a flexible authentication solution for Rails based on Warden.
+gem 'devise'
+Then run bundle install
+
+Next, you need to run the generator:
+
+$ rails generate devise:install
 
 # gem 'cancancan' ###########################################################
 https://github.com/CanCanCommunity/cancancan
